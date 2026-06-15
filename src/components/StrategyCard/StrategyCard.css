@@ -1,0 +1,134 @@
+.strategy-card {
+  border-left: 4px solid #2563eb;
+}
+
+.strategy-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.375rem;
+}
+
+.par-box, .distance-box, .shots-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.par-box .label, .distance-box .label, .shots-box .label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.par-box .value, .distance-box .value, .shots-box .value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-top: 0.25rem;
+}
+
+.recommended-club {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.recommended-club .label {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.875rem;
+}
+
+.club-name {
+  font-weight: 600;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+.tips-section {
+  margin-bottom: 1rem;
+}
+
+.tips-section h4 {
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.tips-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4b5563;
+}
+
+.tips-list li:before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.all-recommendations {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.all-recommendations h4 {
+  margin-bottom: 0.75rem;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.option-item:last-child {
+  border-bottom: none;
+}
+
+.club-option {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.suitability {
+  background-color: #10b981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .strategy-header {
+    grid-template-columns: 1fr;
+  }
+}
