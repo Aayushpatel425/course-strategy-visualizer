@@ -1,0 +1,161 @@
+.profile {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.profile-section .hint {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.input-group button {
+  flex: 0 0 auto;
+  min-width: 100px;
+}
+
+.input-group button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+small {
+  display: block;
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.club-distance-card {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+  transition: all 0.2s;
+}
+
+.club-distance-card:hover {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.club-distance-card label {
+  display: block;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.club-distance-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.club-distance-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.club-distance-input .unit {
+  color: #6b7280;
+  font-weight: 500;
+  min-width: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 1.5rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+
+  .clubs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
